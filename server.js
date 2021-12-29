@@ -7,7 +7,8 @@ const cors = require('cors');
 
 
 app.use(cors({
-  origin: 'https://do-share-frontend.vercel.app'
+  origin: 'https://do-share-frontend.vercel.app',
+  methods: ["GET","POST"],
 }));
 app.use(express.static('public'));
 
